@@ -1,0 +1,284 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: black;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;    
+}
+.navbar a{
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 45px;
+    transition: 1s;
+
+}
+.navbar a:hover,
+.navbar a.active {
+    color: blue;   
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 1050px;
+    padding: 150px;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 800px;
+    color: white;
+    font-size: 90px;
+    margin-right: 1050px;
+
+}
+.home-content span{
+    color: blue;
+}
+
+.home-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+    font-size: 60px;
+}
+
+.home-content pre{
+    color: white;
+    font-size: 50px;
+}
+
+.skills-known h1{
+    color: white;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    font-weight: 500px;
+}
+body {
+  background-color: #12172b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 80px;
+}
+
+.skills-area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.skill {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.skill-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 40px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.skill-fill {
+  background: blue;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+.skill-percent {
+  font-size: 30px;
+}
+
+.html {
+  animation: html 2s;
+  width: 90%;
+}
+
+.css {
+  animation: css 2s;
+  width: 80%;
+}
+
+.js {
+  animation: js 2s;
+  width: 70%;
+}
+.c {
+    animation: js 2s;
+    width: 70%;
+  }
+  
+
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes c {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+  .skills-area {
+    padding: 0 5%;
+  }
+}
+.projects h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 500px;
+}
+.project-card{
+    display: flex;
+    justify-content: center;
+    
+}
+.contact{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+.profile{
+    position: absolute;
+    bottom: 80px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile a {
+     position: relative;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 70px;
+     height: 70px;
+     background: transparent;
+     border: 4px solid blue;
+     border-radius: 50%;
+     font-size: 20px;
+     color: blue;
+     text-decoration: none;
+     z-index: 1;
+     overflow: hidden;
+     transition: .5s;
+}
+.profile a:hover{
+    color: blue;
+}
+.profile a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blue;
+    z-index:  -1;
+    transition: 3s;
+}
+.profile a:hover::before{
+    width: 1000%;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: #0ef;
+}
